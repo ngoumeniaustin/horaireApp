@@ -1,0 +1,46 @@
+#typeRoomTableDiv {
+    max-height:570px; 
+    overflow:auto;
+}
+
+#deleteTyperoomButton {
+    width: 100%;
+}
+
+#addTyperoomButton {
+    width: 100%;
+}
+
+#formLabelNameType {
+    margin-left: 100%;
+}
+
+#inputLableNameType {
+    margin-left: 100%;  
+    border-radius: 10px;
+}
+
+#btnSmallEditType {
+    margin-left: 100%;
+    margin-top: 2%;
+    width: 75%;
+}
+
+#btnSmallCloseType {
+    margin-left: 100%;
+    width: 75%;
+    margin-top: 2%;
+}
+
+#inputLableNameType {
+    width: 75%;
+}
+
+.inputCourseError {
+    background-color: lightpink;
+    border-color: red;
+}
+
+.group-btn-type {
+    margin-right: 100%;
+}

@@ -1,0 +1,136 @@
+#customTable {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    border-color: black;
+    border: 2px;
+    border-style: solid;
+}
+
+.titleRow {
+    margin: 2px;
+    color: white;
+    background-color: blue;
+}
+
+.tableData {
+    margin: 2px;
+}
+
+.row:nth-child(odd) {
+    background-color: #84CEEB;
+}
+
+.coursDeleteButton {
+    background-color: red;
+    border-radius: 4px;
+}
+
+.clickable {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    background-color: #5680E9;
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #5680E9;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    margin: 5% auto;
+    width: 50%;
+}
+
+#coursFormDiv {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.labelCours {
+    font-weight: bold;
+}
+
+.inputCours {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputCours:hover {
+    background-color: lightblue;
+}
+
+
+.selectCours {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.addCours {
+    background-color: #5AB9EA;
+    color: black;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 100%;
+    margin-top: 2%;
+}
+
+.addCours:hover {
+    background-color: lightblue;
+}
+
+#display {
+    margin: 10px;
+}
+
+#popupCourse {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 50%;
+    font-size:20px; 
+    border-radius: 5px; 
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+
+.courseSucces {
+    background-color: lightgreen;
+}
+
+.courseError {
+    background-color: lightpink;
+}
+
+.inputCourseError {
+    background-color: lightpink;
+    border-color: red;
+}

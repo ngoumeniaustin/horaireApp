@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    --blue-color: #3788d8;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    flex: 1;
+    background-color: var(--blue-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calendar{
+    flex: 3;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#typeValues, #buttonadd,#GroupsModal{
+    display: none;
+}
+.selected {
+    background-color: var(--blue-color);
+}
+#undo{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+#undo img{
+    position: relative;
+    height: 100%;
+}
+#redo{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+#redo img{
+    transform: scaleX(-1);
+    position: relative;
+    height: 100%;
+}
+
+.userInfo {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+.user-error {
+    position: absolute;
+    top: 15%;
+    right: 0.5%;
+}
+
+#addCourseButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

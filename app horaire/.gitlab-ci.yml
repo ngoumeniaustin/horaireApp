@@ -1,0 +1,26 @@
+image: docker:latest
+services:
+    - docker:dind
+
+stages:
+    - test
+    - deploy
+
+before_script:
+    - docker login prjhoraires.azurecr.io -u prjhoraires -p jWfHmcc+lEDqoiTkShNohzXDJBSoNdKv
+    - docker build . -t prjhoraires.azurecr.io/prj-horaires-testing --cache-from prjhoraires.azurecr.io/prj-horaires-testing
+
+test:
+    stage: test
+    script:
+        - docker run -e MODE=test prjhoraires.azurecr.io/prj-horaires-testing
+    only:
+        - main
+
+deploy:
+    stage: deploy
+    script:
+        - docker build . -t prjhoraires.azurecr.io/prj-horaires --cache-from prjhoraires.azurecr.io/prj-horaires-testing
+        - docker push prjhoraires.azurecr.io/prj-horaires
+    only:
+        - main
